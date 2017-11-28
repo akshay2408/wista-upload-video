@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en" ng-app="WistiaUpload">
+
+<head>
+  <meta charset="utf-8">
+  <title>Wistia Uploader</title>
+  <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css" />
+  <link rel="stylesheet" href="app.css" />
+
+  <!-- APP STYLES -->
+
+  <style>
+    /* Hide Angular JS elements before initializing */
+
+    .ng-cloak {
+      display: none;
+    }
+  </style>
+
+</head>
+
+<body>
+
+  <div ng-view></div>
+  <script src="bower_components/jquery/dist/jquery.min.js"></script>
+  <script src="https://fast.wistia.com/assets/external/E-v1.js" async></script>
+  <script src="bower_components/angular/angular.js"></script>
+  <script src="bower_components/angular-route/angular-route.js"></script>
+  <script src="bower_components/blueimp-file-upload/js/vendor/jquery.ui.widget.js"></script>
+  <script src="bower_components/blueimp-file-upload/js/jquery.fileupload.js"></script>
+  <script src="bower_components/blueimp-file-upload/js/jquery.fileupload-process.js"></script>
+  <script src="bower_components/blueimp-file-upload/js/jquery.fileupload-validate.js"></script>
+  <script src="bower_components/blueimp-file-upload/js/jquery.fileupload-angular.js"></script>
+  <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+
+  <script src="app.module.js"></script>
+  <script src="app.config.js"></script>
+  <script src="upload-video/upload-video.module.js"></script>
+  <script src="upload-video/upload-video.component.js"></script>
+</body>
+
+</html>
